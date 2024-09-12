@@ -16,6 +16,7 @@ git init
 Initialized empty Git repository in /Users/user/myproject/.git/
 
 git status          status of the repo
+git status --short / git status -s  short form descrption of status
 
 git repo folder can be of 2 states tracked/untracked
 
@@ -30,3 +31,8 @@ git add --all / git add -A           adds all files to staging environment
 GIT commit
 
 git commit -m "First release"       commits the added files with message
+
+To add and commit the changes in the same line
+git commit -a -m "Updated index.html with a new line"
+
+-a automatically stage any modified and deleted files before commiting
