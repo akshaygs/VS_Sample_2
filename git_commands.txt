@@ -47,3 +47,5 @@ git branch v2           creates new branch
 git chekcout v2         makes the branch v2 as current branch
 
 These are some changes made in v2
+
+hello v2
