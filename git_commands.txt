@@ -55,4 +55,4 @@ git chekcout master     make master current branch
 git merge v2            from the master branch changes in v2 are taken into master
 git branch -d v2        deletes v2 branch
 
-This is in master
+This is in v2
