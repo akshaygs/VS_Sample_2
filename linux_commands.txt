@@ -1,0 +1,89 @@
+Open a promt or command prompt or bash prompt or shell
+Terminal pops up
+The place where you type lines in the prompt is command line
+
+pwd             print working directory
+cd              change directory
+
+cd /            root directory 
+cd              homoe directory
+cd ..           parent directory
+cd ../..        2 parent directories
+cd  /etc        move to etc starting from absolute path
+whoami          gives username
+cd ~            Home directory
+cd ~/Desktop    from home drictory opens Desktop
+
+mkdir /tmp/tutorial                 inside root tmp is opened and tutorial filder/directory is created
+mkdir dir1 dir2 dir3                3 folders created in current location
+ls                                  lists current locations files and directories
+mkdir -p dir4/dir5/dir6             -p stands for parent and dir 4 is created inside dir4 dir5 is created and inside dir4 dir5 is created
+mkdir "another foldere"             for naming files/folders with space a quoatatin can be used
+
+
+ls >output.txt                      creates a text file named output and saves a ls data in it
+cat output.txt                      to look inside output.txt
+echo "This is a test"               displays this is a test
+echo "this is test0" > test.txt     creates test.txt and stores the text
+echo "this is test1" > test1.txt    creates test2.txt and stores the text
+echo "this is test2" > test2.txt    creates test2.txt and stores the text
+
+cat test1.txt test2.txt test3.text  concatenates/linktogether 3 files and print them out
+cat test_?.txt                      does the same
+cat test_*                          does the same
+cat t*                              does the same
+# naming matters a lot
+
+cat t* >combined.txt                creates combined file and saves concatenated values of 3 files
+cat t* >> combined.txt              concatenates content without clearing previous data
+echo "I've appended a line!" >> combined.txt    appedns text without clearing previous data
+
+less combined.txt                   used to view file with a lot of content
+
+mv combined.txt dir1                combined.txt file moves to dir1 directory
+ls dir1                             list stuff inside the dir1 directory
+mv dir1/* .                         moves all the stuff in dir1 to parent directory denoted by .
+mv dir1/combined.txt .              moves only combined.txt in dir1 to parent directory denoted by .
+mv combined.txt test_* dir3 dir2    moves all the files denoted to dir2
+mv dir2/combined.txt dir4/dir5/dir6 moves combined.txt to dir6
+
+cp dir4/dir5/dir6/combined.txt .                copies combined.txt into parent directory of dir 4
+cp combined.txt backup_combined.txt             copies combined.txt to backup_combined
+mv backup_combined.txt combined_backup.txt      renames backup_combined to combined_backup
+
+mv "folder 1" folder_1
+mv "folder 2" folder_2
+mv "folder 3" folder_3
+mv "folder 4" folder_4                          Renames the folders
+mv "folder 5" folder_5
+mv "folder 6" folder_6
+ls
+
+rm dir4/dir5/dir6/combined.txt                  removes combined.txt     
+
+rmdir dir1                                      deletes dir1 file
+rmdir dir*                                      removes all folders with dir starting name only if they are empty
+# First empty contents then delete folders
+
+rm -r dir                                       removes all folders and files without question
+
+
+wc -l combined.txt                              number of lines in the combined text file, -l stand for only line count
+ls ~>file_list.txt
+wc -l file_list.txt
+rm file_list.txt
+
+ls  | wc -l     A pileline is created -> The output of ls which is the list is fed into the input of
+                wc -l which is a line counter, pepese operate in memory
+
+sort combined.txt | less    sorts combined.txt files in alphabetical order and prints them
+
+sort combined.txt | uniq | wc -l
+
+
+sort combined.txt | uniq | less >> temp.txt && mv temp.txt  combined.txt
+1. sort combined.txt - Sorts the file combined.txt.
+2. uniq - Removes duplicate lines from the sorted output.
+3. > temp.txt - Saves the output into a temporary file (temp.txt).
+4. && mv temp.txt combined.txt - Moves the temporary file back to combined.txt, 
+   effectively replacing the original file with the sorted and unique content.

@@ -1,0 +1,32 @@
+git --version       will get git version
+
+Configure git
+This is important for version control systems, as each Git commit uses this information:
+Use global to set the username and e-mail for every repository on your computer.
+If you want to set the username/e-mail for just the current repo, you can remove global
+
+git config --global user.name "akshaygs"
+git config --global user.email "akshaygs2013@gmail.com"
+
+
+Initialize GIT
+
+You just created your first Git Repository!
+git init 
+Initialized empty Git repository in /Users/user/myproject/.git/
+
+git status          status of the repo
+
+git repo folder can be of 2 states tracked/untracked
+
+When you first add files to a repo they are untracked, 
+To get GIT to track them you need to stage them or add them to staging environment
+
+GIT STAGIGING
+
+git add readme.md       adds readme.md to staging environment
+git add --all / git add -A           adds all files to staging environment
+
+GIT commit
+
+git commit -m "First release"       commits the added files with message
