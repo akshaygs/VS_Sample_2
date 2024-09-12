@@ -41,9 +41,18 @@ git commit -a -m "Updated index.html with a new line"
 git help --all
 git command -help
 
+GIT Branche
 
 git branch              display the branches and current branch
 git branch v2           creates new branch
 git chekcout v2         makes the branch v2 as current branch
 
 These are some changes made in v2
+
+GIT (this bracket is added here) MERGE
+
+git chekcout master     make master current branch
+git merge v2            from the master branch changes in v2 are taken into master
+git branch -d v2        deletes v2 branch
+
+This is in master
