@@ -36,3 +36,14 @@ To add and commit the changes in the same line
 git commit -a -m "Updated index.html with a new line"
 
 -a automatically stage any modified and deleted files before commiting
+
+
+git help --all
+git command -help
+
+
+git branch              display the branches and current branch
+git branch v2           creates new branch
+git chekcout v2         makes the branch v2 as current branch
+
+These are some changes made in v2
