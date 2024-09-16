@@ -8,4 +8,7 @@ This is v2
 
 This is not v2
 
-I am editing from github website
+I am editing from github website by using git fetch and merge
+
+I am editing from github website by using git pull
+
