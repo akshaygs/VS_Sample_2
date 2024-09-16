@@ -12,3 +12,4 @@ I am editing from github website by using git fetch and merge
 
 I am editing from github website by using git pull
 
+I am editing from vs code to push to github
